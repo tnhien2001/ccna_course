@@ -1,0 +1,71 @@
+File đuôi .exe là file thực thi (Trong Windows)
+File đuôi .bin là file thực thi (trong Linux)
+
+show version
+show ip interface brief
+show flash
+show clock
+
+
+**** Cấu hình Router cơ bản ****
+enable
+conf t
+hostname HCM
+enable password 456
+enable secret 789
+banner motd %Ban dang ket noi den router dat tai Ho Chi Minh%
+
+line con 0
+password 123
+login 
+loggin sync
+exec-timeout 0 0
+
+line vty 0 4
+login
+password telnet
+
+----------------------
+
+enable
+conf t
+hostname CanTho
+enable password 456
+enable secret 789
+banner motd %Ban dang ket noi den router dat tai Can Tho%
+
+line con 0
+loggin sync
+password 123
+login 
+exec-timeout 0 0
+
+line vty 0 4
+login
+password telnet
+
+----------------------
+
+enable
+conf t
+hostname Hanoi
+enable password 456
+enable secret 789
+banner motd %Ban dang ket noi den router dat tai Ha noi%
+
+line con 0
+password 123
+login 
+loggin sync
+exec-timeout 0 0
+
+line vty 0 4
+login
+password telnet
+
+------------------------
+
+show cdp neighbors : kiểm tra đường mạng của nơi khác.
+show cdp neighbors detail: kiểm tra chi tiết cấu hình
+của nơi khác.
+

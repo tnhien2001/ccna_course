@@ -1,0 +1,17 @@
+Router giống như 1 pc có hệ điều hành.
+
+Khi nào thì nối cáp thẳng và cáp chéo:
++Nối cáp thẳng là khi 2 thiết bị kết nối là khác loại nhau
++Nối cáp chéo là khi 2 thiết bị kết nối là cùng loại nhau
+
+Cách tính số cáp dùng trong hệ thống mạng?
+
+*USB Console cable - connection:
+(https://www.youtube.com/watch?v=EiPDuHfjpSQ&t=10s)
+
+Cách thiết lập router
+enable
+configure terminal
+interface g0/0
+ip address 192.168.1.1 255.255.255.0
+

@@ -1,0 +1,15 @@
+Số port > số máy từ 15% -> 20%
+Port tốc độ cao để
+2 port của 2 switch nối với nhau sẽ gây nghẽn cổ chai.
+
+Switch nối nhiều máy với nhau
+Router nối nhiều chi nhánh lại với nhau
+
+Khi nào thì cần Router?
+=> Dùng để nối nhiều chi nhánh lại với nhau.
+=> Để chặn Broadcast.
+=> Giúp tìm đường đi nếu hệ thống mạng lớn.
+=> Doanh nghiệp > 100 máy cần có Router.
+
+Availability: Độ ổn định, độ sẵn sàng
+Reliability: Độ tin cậy

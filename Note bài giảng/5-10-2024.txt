@@ -1,0 +1,11 @@
+1. PAT hoặc còn gọi là Overloading: (Nat out)
+
+RB(config)#ip route 0.0.0.0 0.0.0.0 210.10.1.1
+RB(config)#interface g0/1
+RB(config-if)#ip nat outside
+RB(config-if)#interface g0/0
+RB(config-if)#ip nat inside
+
+RB(config)#access-list 1 permit 192.168.1.0 0.0.0.255
+RB(config)#ip nat inside source list 1 interface g0/1 overload
+

@@ -1,0 +1,1 @@
+Switch layer muốn đặt ip address phải no switchport

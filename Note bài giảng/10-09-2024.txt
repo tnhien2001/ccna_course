@@ -1,0 +1,21 @@
+Switch là gì? -> Bộ chuyển mạch.
+
+1 Switch cisco học được bao nhiêu máy tính?
+=> > 8000 máy tính.
+
+VD: 192.168.1.2
++ 192.168.1: Net ID
++ .2: Host ID
+
+Mô hình OSI gồm 7 lớp
+1. Physical (Cable - Cáp hoạt động tại đây)
+2. Data Link (Switch, LAN hoạt động tại đây)
+3. Network (Switch layer 3, Router hoạt động tại đây)
+4. Transport 
+5. Session
+6. Presentation
+7. Application
+
++ Phần cứng gồm các lớp: 1, 2, 3.
++ Phần mềm gồm các lớp 4, 5, 6, 7.
+

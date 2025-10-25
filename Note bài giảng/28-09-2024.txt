@@ -1,0 +1,26 @@
+***R1
+int g0/0
+standby 1 ip 10.0.0.254
+standby 1 priority 105
+standby 1 preempt
+
+int g0/1
+standby 2 ip 20.0.0.254
+standby 2 priority 105
+standby 2 preempt
+
+
+***R2
+int g0/0
+standby 1 ip 10.0.0.254
+standby 1 preempt
+
+int g0/1
+standby 2 ip 20.0.0.254
+standby 2 preempt
+
+***Track***
+int g0/0
+standby 1 track g0/1
+int g0/1
+standby 2 track g0/0

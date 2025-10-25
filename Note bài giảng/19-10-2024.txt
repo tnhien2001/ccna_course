@@ -1,0 +1,4 @@
+Static Root có độ ưu tiên cao nhất
+Default Root có độ ưu tiên thấp nhất
+standard access-list: kiểm tra địa chỉ nơi đi
+extended access-list: kiểm tra địa chỉ nơi đi và nơi đến

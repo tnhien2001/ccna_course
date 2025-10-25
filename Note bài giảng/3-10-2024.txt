@@ -1,0 +1,28 @@
+R1(config)#access-list 102 permit tcp any host 10.1.3.20 eq pop3
+R1(config)#access-list 102 permit tcp any host 10.1.3.20 eq smtp 
+R1(config)#access-list 102 deny ip any host 10.1.3.20
+R1(config)#access-list 102 permit ip any any
+
+R1(config)#interface g0/0/0
+R1(config-if)#ip access-group 102 in
+R1(config-if)#interface g0/1/0
+R1(config-if)#ip access-group 102 in
+
+- Các thiết bị BB phải đặt IP tĩnh:
++ Server, Router, Printer,...
+
+- ip dhcp pool: là bể chứa IP
+- ip dhcp excluded-address: khoảng IP mà cấp IP động k đc 
+đụng vào.
+
+**#dhcp**
+- default-router: thiết lập gateway
+- dns-server: cấp DNS cho pc
+
+- ip helpder-address: giúp hỗ trợ cấp IP
+
+
+Kiểm tra PC:
+ipconfig /release
+ipconfig /renew
+ipconfig /all
